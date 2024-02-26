@@ -3,4 +3,25 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+:root {
+  --Inter: "Inter", sans-serif;
+  --Charis: "Charis SIL", serif;
+  --index: calc(1vw + 1vh);
+  --text: #1E2533;
+}
+
+.center {
+  width: 1352px;
+  margin: 0px auto;
+}
+
+a {
+  text-decoration: none;
 }

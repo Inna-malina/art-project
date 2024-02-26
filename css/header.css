@@ -1,0 +1,105 @@
+.navbar-container {
+  padding: 25px 0px 0px 0px;
+}
+
+.container-fluid {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand {
+  display: block;
+  margin: 0px 55px 0px 0px;
+}
+
+.navbar-brand__img {
+  display: block;
+  width: 175px;
+  height: 67px;
+  object-fit: cover;
+}
+
+.navbar-content {}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link__arrow::after {
+  position: absolute;
+  content: "\2039";
+  right: -8px;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+
+.nav-link {
+  display: block;
+  font-family: var(--Inter);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #FC8C5F;
+}
+
+.nav-link__active {
+  color: #FC8C5F;
+}
+
+/* выпадающее меню начало */
+.dropdown-menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  left: 25px;
+  top: 25px;
+  background: rgb(128 128 128 / 16%);
+  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+}
+
+.dropdown-item {
+  display: block;
+  font-family: var(--Inter);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+  padding: 10px;
+}
+
+.dropdown-menu *:not(:last-child) {
+  border-bottom: 1px solid #ffffff;
+}
+
+.dropdown-menu__hidden {
+  opacity: 0;
+}
+
+.dropdown-menu__visible {
+  opacity: 1;
+}
+
+
+
+/* выпадающее меню конец */
