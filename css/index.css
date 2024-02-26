@@ -1,4 +1,5 @@
 @import url('header.css');
+@import url('bunner-section.css');
 
 * {
   margin: 0px;
@@ -23,6 +24,12 @@ ul {
 
 .center {
   max-width: 1352px;
+  margin: 0px auto;
+}
+
+.big-center {
+  position: relative;
+  max-width: 1920px;
   margin: 0px auto;
 }
 

@@ -8,7 +8,7 @@ navArrow.addEventListener('click', function (elem) {
   dropDownMenu.classList.toggle('dropdown-menu__hidden');
 });
 // выпадающее меню конец
-
+//==============================
 // выезжающее бургер-меню начало
 let burgerMenu = document.querySelector('.navbar-burger__img');
 let navBarContent = document.querySelector('.navbar-content');

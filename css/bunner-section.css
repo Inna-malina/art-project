@@ -1,0 +1,26 @@
+.circle-color {
+  position: absolute;
+  background: radial-gradient(50% 50%, rgb(250, 120, 70, 0.16), rgba(255, 255, 255, 0.06));
+  width: 480px;
+  height: 480px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.circle-one {
+  top: 110px;
+  right: -50px;
+}
+
+.circle-two {
+  top: 0px;
+  left: -150px;
+}
+
+.circle-three {
+  top: 310px;
+  left: -150px;
+}
