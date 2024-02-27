@@ -27,13 +27,58 @@
 
 .bunner-section {}
 
+.clearfix {
+  height: 775px;
+}
+
 .bunner-bg {
+  position: absolute;
   width: 100%;
   height: 775px;
-  background: url('/images/main/bunner/hero-img.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+.bg-one {
+  background: url('/images/main/bunner/hero-img-1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-two {
+  background: url('/images/main/bunner/hero-img-2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-three {
+  background: url('/images/main/bunner/hero-img-3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-four {
+  background: url('/images/main/bunner/hero-img-4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-active {
+  opacity: 1;
+}
+
+.bg-disactive {
+  opacity: 0;
 }
 
 .center {}
@@ -142,4 +187,41 @@
 .bunner-img__container {
   padding: 35px 0px 0px 0px;
 
+}
+
+.bunner-buttons-container {
+  position: relative;
+  z-index: 200;
+  top: 635px;
+  display: flex;
+  justify-content: center;
+}
+
+.bunner-arrow__left,
+.bunner-arrow__right {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  background: var(--hero-color);
+  margin: 20px;
+  border-radius: 50%;
+}
+
+.bunner-arrow__left::after {
+  position: relative;
+  content: "\2039";
+  color: #FFFFFF;
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.bunner-arrow__right::after {
+  position: relative;
+  content: "\203A";
+  color: #FFFFFF;
+  font-size: 35px;
+  font-weight: 900;
 }
