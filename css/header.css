@@ -67,11 +67,11 @@
 }
 
 .nav-link:hover {
-  color: #FC8C5F;
+  color: var(--hero-color);
 }
 
 .nav-link__active {
-  color: #FC8C5F;
+  color: var(--hero-color);
 }
 
 /* выпадающее меню начало */

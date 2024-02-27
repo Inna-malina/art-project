@@ -20,7 +20,24 @@ ul {
   --Charis: "Charis SIL", serif;
   --index: calc(1vw + 1vh);
   --text: #1E2533;
+  --hero-color: #FC8C5F;
 }
+
+header {
+  position: relative;
+  z-index: 100;
+}
+
+main {
+  position: relative;
+  top: -92px;
+
+}
+
+.text-color {
+  color: var(--hero-color);
+}
+
 
 .center {
   max-width: 1352px;
