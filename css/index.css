@@ -44,10 +44,11 @@ main {
   margin: 0px auto;
 }
 
-.big-center {
-  position: relative;
+
+.wrapper {
   max-width: 1920px;
   margin: 0px auto;
+  overflow-x: hidden;
 }
 
 @media (max-width: 1360px) {

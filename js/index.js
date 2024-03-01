@@ -23,7 +23,7 @@ navClose.addEventListener('click', function (elem) {
   navBarContent.classList.remove('navbar-move');
 });
 // выезжающее бургер-меню конец
-
+//==============================
 //слайдер в баннере начало
 let bunners = document.querySelectorAll('.bunner-bg');
 let btn_R = document.querySelector('.bunner-arrow__right');
@@ -60,7 +60,5 @@ btn_L.addEventListener('click', function (elem) {
   }
   slider();
 })
-
-
 
 //слайдер в баннере конец
