@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Портреты по фото</title>
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="dist/index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -208,37 +208,63 @@
       </section>
 
       <section class="simpler-section">
-        <h2 class="simpler-title">Всё проще и доступнее, чем кажется</h2>
-        <div class="slider-filter__container">
-          <nav class="nav_container">
-            <ul>
-              <li class="active-nav" data-nav="one-nav">Портрет на холсте</li>
-              <li data-nav="two-nav">Что это такое</li>
-              <li data-nav="three-nav">Требование к снимку</li>
-              <li data-nav="four-nav">Цены и размеры</li>
-              <li data-nav="five-nav">Доставка и время</li>
-            </ul>
-          </nav>
-          <div class="slider-description__container">
-            <div class="slider-images__container">
-              <img data-content="one-nav_background" src="" alt="">
+        <div class="center">
+          <h2 class="simpler-title">Всё проще и доступнее, чем кажется</h2>
+        </div>
+
+        <div class="tab-filter__container">
+          <div class="center">
+            <nav class="nav_container">
+              <ul>
+                <li data-nav="one-nav" class="nav-tab active-nav">Портрет на холсте</li>
+                <li data-nav="two-nav" class="nav-tab">Что это такое</li>
+                <li data-nav="three-nav" class="nav-tab">Требование к снимку</li>
+                <li data-nav="four-nav" class="nav-tab">Цены и размеры</li>
+                <li data-nav="five-nav" class="nav-tab">Доставка и время</li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="tab-description__container">
+            <div class="tab-images__container">
+              <img data-content="one-nav_background" src="./images/main/simpler/nav-1.png" alt="">
             </div>
-            <div class="slider-text__container">
-              <div class="slider-text__element">
-                <div data-content="one-nav_img-1" class="slider-img"></div>
-                <div data-content="one-nav__text-1" class="slider-text"></div>
+            <div class="tab-text__container">
+              <div class="tab-text__element">
+                <div data-content="one-nav_img-1" class="tab-img">
+                  <img src="./images/main/simpler/foto-1.png" alt="">
+                </div>
+                <div data-content="one-nav__text-1" class="tab-text">
+                  Портрет рисует художник.
+                  Детально прорисовывает все части портрета!
+                </div>
               </div>
-              <div class="slider-text__element">
-                <div data-content="one-nav_img-2" class="slider-img"></div>
-                <div data-content="one-nav__text-2" class="slider-text"></div>
+              <div class="tab-text__element">
+                <div data-content="one-nav_img-2" class="tab-img">
+                  <img src="./images/main/simpler/foto-2.png" alt="">
+                </div>
+                <div data-content="one-nav__text-2" class="tab-text">
+                  Покрытие Вашей картины защитным акриловым лаком
+                  или текстурным гелем.
+                </div>
               </div>
-              <div class="slider-text__element">
-                <div data-content="one-nav_img-3" class="slider-img"></div>
-                <div data-content="one-nav__text-3" class="slider-text"></div>
+              <div class="tab-text__element">
+                <div data-content="one-nav_img-3" class="tab-img">
+                  <img src="./images/main/simpler/foto-3.png" alt="">
+                </div>
+                <div data-content="one-nav__text-3" class="tab-text">
+                  Яркость
+                  и прочность материалов более 100 лет! Холст сохранит свое
+                  натяжение и не провиснет!
+                </div>
               </div>
-              <div class="slider-text__element">
-                <div data-content="one-nav_img-4" class="slider-img"></div>
-                <div data-content="one-nav__text-4" class="slider-text"></div>
+              <div class="tab-text__element">
+                <div data-content="one-nav_img-4" class="tab-img">
+                  <img src="./images/main/simpler/foto-4.png" alt="">
+                </div>
+                <div data-content="one-nav__text-4" class="tab-text">
+                  Каждая картина упаковывается подарочную бумагу и украшается бантом!
+                </div>
               </div>
             </div>
           </div>
@@ -251,7 +277,8 @@
 
 
 
-  <script src="js/index.js"></script>
+  <script type="module" src="dist/index.js"></script>
+
 </body>
 
 </html>
