@@ -1,0 +1,57 @@
+.exampler-section {}
+
+.slider-before-after {
+  width: 400px;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid black;
+}
+
+.slider-before-after img {
+  width: 400px;
+  height: 400px;
+  display: block;
+  object-fit: cover;
+}
+
+.before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 50%;
+  z-index: 2;
+}
+
+.after {}
+
+.change {
+  z-index: 10;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  width: 3px;
+  height: 100%;
+  background: #000;
+}
+
+.change::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: #000;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  -o-transform: translate(-50%, 50%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
