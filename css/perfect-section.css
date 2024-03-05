@@ -1,0 +1,66 @@
+.perfect-gift-section {
+  position: relative;
+  background: #F9EEE9;
+  top: -100px;
+  z-index: 0;
+}
+
+.bunner-bg-fluid .perfect-description {
+  width: 50%;
+  align-self: center;
+}
+
+
+.bunner-bg-fluid .title-perfect-bg {
+  text-align: left;
+  line-height: 60px;
+  margin-bottom: 45px;
+}
+
+.text-perfect-bg {
+  font-family: var(--Inter);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.bunner-bg-fluid .perfect-img {
+  width: 50%;
+}
+
+.perfect-img img {
+  background-size: contain;
+}
+
+@media (max-width: 1100px) {
+  .perfect-img img {
+    width: 761px;
+  }
+}
+
+@media (max-width: 870px) {
+  .perfect-img img {
+    width: 100%;
+  }
+
+  .perfect-gift-section .bunner-bg-fluid {
+    padding: 105px 0px 0px 0px;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .bunner-bg-fluid .title-perfect-bg {
+    text-align: center;
+  }
+
+  .bunner-bg-fluid .perfect-description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bunner-bg-fluid .perfect-img {
+    width: 100%;
+
+  }
+}

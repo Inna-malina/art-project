@@ -240,6 +240,7 @@
   }
 
   .bunner-descr__container {
+    padding: 170px 0px 0px 0px;
     flex-grow: 0;
     width: 50%;
   }
@@ -250,6 +251,7 @@
   .bg-four {
     background-position: -625px;
   }
+
 }
 
 @media (max-width: 870px) {

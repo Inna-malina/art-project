@@ -95,7 +95,7 @@
 
                 </div>
                 <div class="bunner-img__container">
-                  <img src="images/main/bunner/paint.png" alt="Картинка">
+                  <!-- <img src="images/main/bunner/paint.png" alt="Картинка"> -->
                 </div>
               </div>
             </div>
@@ -128,7 +128,7 @@
 
                 </div>
                 <div class="bunner-img__container">
-                  <img src="images/main/bunner/paint.png" alt="Картинка">
+                  <!-- <img src="images/main/bunner/paint.png" alt="Картинка"> -->
                 </div>
               </div>
             </div>
@@ -161,7 +161,7 @@
 
                 </div>
                 <div class="bunner-img__container">
-                  <img src="images/main/bunner/paint.png" alt="Картинка">
+                  <!-- <img src="images/main/bunner/paint.png" alt="Картинка"> -->
                 </div>
               </div>
             </div>
@@ -194,7 +194,7 @@
 
                 </div>
                 <div class="bunner-img__container">
-                  <img src="images/main/bunner/paint.png" alt="Картинка">
+                  <!-- <img src="images/main/bunner/paint.png" alt="Картинка"> -->
                 </div>
               </div>
             </div>
@@ -209,7 +209,7 @@
 
       <section class="simpler-section">
         <div class="center">
-          <h2 class="simpler-title">Всё проще и доступнее, чем кажется</h2>
+          <h2 class="section-title simpler-title">Всё проще и доступнее, чем кажется</h2>
         </div>
 
         <div class="tab-filter__container">
@@ -276,65 +276,69 @@
 
       <section class="exampler-section">
         <div class="center">
+          <h2 class="section-title exampler-title">Примеры наших портретов</h2>
+          <div class="exampler-section__text-fluid">
+            <h3 class="exampler-section__description">До/После</h3>
+          </div>
+        </div>
+        <div class="center">
           <div class="slider">
             <div class="before">
-              <img src="2.jpg" alt="">
+              <img src="./images/main/exampler/g-1.jpg" alt="">
             </div>
             <div class="after">
-              <img src="1.jpg" alt="">
+              <img src="./images/main/exampler/g-2.jpg" alt="">
             </div>
             <div class="change"></div>
           </div>
-          <style>
-            .slider {
-              position: relative;
-              overflow: hidden;
-              border: 3px solid crimson;
-              width: 100%;
-            }
-
-            .slider img {
-              width: 100%;
-              height: 100%;
-              display: block;
-              object-fit: cover;
-            }
-
-            .before {
-              position: absolute;
-              left: 0;
-              top: 0;
-              overflow: hidden;
-              z-index: 2;
-              width: 50%;
-              height: 100%;
-            }
-
-            .change {
-              position: absolute;
-              left: 50%;
-              top: 0;
-              z-index: 10;
-              width: 3px;
-              height: 100%;
-              background-color: crimson;
-            }
-
-            .change::after {
-              content: "";
-              position: absolute;
-              left: 50%;
-              top: 50%;
-              border-radius: 100%;
-              width: 50px;
-              height: 50px;
-              background-color: crimson;
-              transform: translate(-50%, -50%);
-            }
-          </style>
+        </div>
+        <div class="center">
+          <div class="exampler-section__text-fluid">
+            <p class="exampler-section__text">Потяните за ползунок влево или вправо</p>
+          </div>
 
         </div>
+      </section>
 
+      <section class="perfect-gift-section">
+        <div class="center">
+          <div class="bunner-bg-fluid">
+            <div class="bunner-descr__container perfect-description">
+              <h2 class="section-title title-perfect-bg">
+                Портрет на холсте - <br>
+                <span class="text-color">идеальный подарок!</span>
+              </h2>
+              <div class="text-perfect-bg">
+                Дорогие сердцу воспоминания лучше запечатлеть
+                в виде фотокартин, тогда они наполнят дом теплотой и будут радовать глаз.
+              </div>
+              <button class="bunner-button">Заказать портрет</button>
+            </div>
+            <div class="perfect-img">
+              <img src="./images/main/perfect/boy.png" alt="foto">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="offer-section">
+        <div class="center">
+          <div class="text-container__offer-section">
+            <h2 class="section-title title-offer-section">
+              Этапы оформления заказа
+            </h2>
+            <p class="text-offer-section">
+              Заказать фото на холсте — легко и быстро!
+            </p>
+            <div class="clock-offer-section">
+              <div>Экспресс: 1 день</div>
+              <div>Стандарт: 3-8 дней</div>
+            </div>
+          </div>
+          <div class="cards-offer__container">
+
+          </div>
+        </div>
       </section>
     </main>
   </div>

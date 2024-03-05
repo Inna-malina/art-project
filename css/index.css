@@ -2,6 +2,7 @@
 @import url('bunner-section.css');
 @import url('simpler-section.css');
 @import url('exampler-section.css');
+@import url('perfect-section.css');
 
 * {
   margin: 0px;
@@ -63,4 +64,17 @@ main {
 
 a {
   text-decoration: none;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 45px;
+  font-family: var(--Charis);
+  font-weight: 400;
+}
+
+@media (max-width: 1045px) {
+  .section-title {
+    font-size: 40px;
+  }
 }
