@@ -1030,6 +1030,7 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  padding: 0px;
 }
 
 .bunner-bg-fluid .title-perfect-bg {
@@ -1042,6 +1043,17 @@
   font-family: var(--Inter);
   font-size: 20px;
   font-weight: 600;
+}
+
+.perfect-gift-section .bunner-button {
+  margin: 60px 0px 0px 0px;
+  position: absolute;
+}
+
+.perfect-gift-section .bunner-button:active {
+  -webkit-box-shadow: 0px 0px #d97851;
+          box-shadow: 0px 0px #d97851;
+  margin: 65px 0px 0px 0px;
 }
 
 .bunner-bg-fluid .perfect-img {
