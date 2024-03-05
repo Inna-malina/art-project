@@ -309,28 +309,28 @@
 }
 
 .bg-one {
-  background: url('/images/main/bunner/hero-img-1.jpg');
+  background: url('../images/main/bunner/hero-img-1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .bg-two {
-  background: url('/images/main/bunner/hero-img-2.jpg');
+  background: url('../images/main/bunner/hero-img-2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .bg-three {
-  background: url('/images/main/bunner/hero-img-3.jpg');
+  background: url('../images/main/bunner/hero-img-3.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .bg-four {
-  background: url('/images/main/bunner/hero-img-4.jpg');
+  background: url('../images/main/bunner/hero-img-4.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -391,7 +391,7 @@
 
 .bunner-list-item::before {
   position: absolute;
-  content: url('/images/main/bunner/brush.png');
+  content: url('../images/main/bunner/brush.png');
   left: -43px;
 
 }
