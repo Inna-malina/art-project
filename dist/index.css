@@ -1100,11 +1100,53 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 0px 0px 130px 0px;
   }
 
   .bunner-bg-fluid .perfect-img {
     width: 100%;
 
+  }
+
+  .perfect-gift-section .bunner-button:active {
+    -webkit-box-shadow: 0px 0px #d97851;
+            box-shadow: 0px 0px #d97851;
+    margin: 290px 0px 0px 0px;
+  }
+
+  .perfect-gift-section .bunner-button {
+    margin: 285px 0px 0px 0px;
+    position: absolute;
+  }
+}
+
+@media (max-width: 433px) {
+  .bunner-bg-fluid .title-perfect-bg {
+    line-height: 47px;
+  }
+
+  .perfect-gift-section .bunner-button:active {
+    -webkit-box-shadow: 0px 0px #d97851;
+            box-shadow: 0px 0px #d97851;
+    margin: 360px 0px 0px 0px;
+  }
+
+  .perfect-gift-section .bunner-button {
+    margin: 355px 0px 0px 0px;
+    position: absolute;
+  }
+}
+
+@media (max-width: 420px) {
+  .perfect-gift-section .bunner-button {
+    margin: 420px 0px 0px 0px;
+    position: absolute;
+  }
+
+  .perfect-gift-section .bunner-button:active {
+    -webkit-box-shadow: 0px 0px #d97851;
+            box-shadow: 0px 0px #d97851;
+    margin: 425px 0px 0px 0px;
   }
 }
 
@@ -1112,7 +1154,7 @@
   background: #1E2533;
   top: -100px;
   position: relative;
-  padding: 70px 0px 0px 0px;
+  padding: 70px 0px 70px 0px;
 }
 
 .text-container__offer-section {}
@@ -1160,8 +1202,6 @@
   padding: 38px 21px 38px 62px;
 }
 
-.cards-offer__container {}
-
 .clock-express::before {
   position: absolute;
   content: url('../images/main/offer/express.png');
@@ -1176,11 +1216,114 @@
   left: -45px;
 }
 
-.card-container {}
+.cards-offer__container {
+  margin: 60px 0px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 
-.title {}
+.card-container {
 
-.text {}
+  width: 200px;
+  border: 1px solid #FA7846;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  padding: 10px;
+}
+
+.card-container img {}
+
+.title {
+  text-align: center;
+  color: #FA7846;
+  font-family: var(--Inter);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.text {
+  color: #ffffff;
+  font-family: var(--Inter);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.offer-button {
+  cursor: pointer;
+  max-width: 480px;
+  margin: 60px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 8px;
+  background: #FA7846;
+  color: #FFFFFF;
+  font-family: var(--Charis);
+  padding: 27px 80px;
+  font-size: 30px;
+  font-weight: 400;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.offer-button:hover {
+  -webkit-box-shadow: 0px 0px 20px 9px #d97851;
+          box-shadow: 0px 0px 20px 9px #d97851;
+  ;
+}
+
+@media (max-width: 1160px) {
+
+  /* Создаём полосу прокрутки и скрываем её от пользователей */
+  .scroll-container {
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scroll-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cards-offer__container {
+    width: 1080px;
+    margin: 60px 0px 0px 0px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
+
+  }
+
+
+}
+
+@media (max-width: 660px) {
+  .clock-offer__container {
+    gap: 70px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .offer-button {
+    padding: 27px 45px;
+  }
+}
 
 * {
   margin: 0px;

@@ -2,7 +2,7 @@
   background: #1E2533;
   top: -100px;
   position: relative;
-  padding: 70px 0px 0px 0px;
+  padding: 70px 0px 70px 0px;
 }
 
 
@@ -47,7 +47,6 @@
   padding: 38px 21px 38px 62px;
 }
 
-.cards-offer__container {}
 
 .clock-express::before {
   position: absolute;
@@ -63,8 +62,97 @@
   left: -45px;
 }
 
-.card-container {}
+.cards-offer__container {
+  margin: 60px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+}
 
-.title {}
+.card-container {
 
-.text {}
+  width: 200px;
+  border: 1px solid #FA7846;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  padding: 10px;
+}
+
+.card-container img {}
+
+.title {
+  text-align: center;
+  color: #FA7846;
+  font-family: var(--Inter);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.text {
+  color: #ffffff;
+  font-family: var(--Inter);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.offer-button {
+  cursor: pointer;
+  max-width: 480px;
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #FA7846;
+  color: #FFFFFF;
+  font-family: var(--Charis);
+  padding: 27px 80px;
+  font-size: 30px;
+  font-weight: 400;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.offer-button:hover {
+  box-shadow: 0px 0px 20px 9px #d97851;
+  ;
+}
+
+@media (max-width: 1160px) {
+
+  /* Создаём полосу прокрутки и скрываем её от пользователей */
+  .scroll-container {
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scroll-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cards-offer__container {
+    width: 1080px;
+    margin: 60px 0px 0px 0px;
+    justify-content: center;
+    gap: 10px;
+
+  }
+
+
+}
+
+@media (max-width: 660px) {
+  .clock-offer__container {
+    gap: 70px;
+    flex-wrap: wrap;
+  }
+
+  .offer-button {
+    padding: 27px 45px;
+  }
+}
