@@ -297,6 +297,40 @@ function toBeforAfter() {
   });
 }
 
+/***/ }),
+/* 6 */
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   toMoveAccordion: function() { return /* binding */ toMoveAccordion; }
+/* harmony export */ });
+function toMoveAccordion() {
+  let accordeons = document.querySelectorAll('.accordion-item');
+  let closes = document.querySelectorAll('.close-according');
+ 
+
+  accordeons.forEach(function (accord) {
+    accord.addEventListener('click', function (elem) {
+    
+      let action = elem.target;
+      let currentAccordElem = action.closest('.accordion-item');//определяем текущий бокс
+      let currentContent = action.nextElementSibling; // находим скрытый контент
+      currentAccordElem.classList.toggle("active"); //присваиваем основному контейнеру флаг активности   
+      if (currentAccordElem.classList.contains("active")) { 
+        currentContent.style.maxHeight = currentContent.scrollHeight + "px";
+        //Обратить внимание чтоб стили были присвоены классу .accordion-collapse
+
+      }
+      else {
+        currentContent.style.maxHeight = 0;       
+      }
+    });
+  });
+
+
+}
+
 /***/ })
 /******/ 	]);
 /************************************************************************/
@@ -362,6 +396,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _toSliderBunner__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
 /* harmony import */ var _header_menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4);
 /* harmony import */ var _befor_after__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5);
+/* harmony import */ var _question__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6);
+
 
 
 
@@ -374,6 +410,7 @@ __webpack_require__.r(__webpack_exports__);
 (0,_toSliderBunner__WEBPACK_IMPORTED_MODULE_1__.toSliderBunner)();
 (0,_toChangeTab__WEBPACK_IMPORTED_MODULE_0__.toChangeTab)();
 (0,_befor_after__WEBPACK_IMPORTED_MODULE_3__.toBeforAfter)();
+(0,_question__WEBPACK_IMPORTED_MODULE_4__.toMoveAccordion)();
 
 }();
 /******/ })()
