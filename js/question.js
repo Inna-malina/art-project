@@ -1,8 +1,6 @@
 export function toMoveAccordion() {
   let accordeons = document.querySelectorAll('.accordion-item');
-  let closes = document.querySelectorAll('.close-according');
  
-
   accordeons.forEach(function (accord) {
     accord.addEventListener('click', function (elem) {
     

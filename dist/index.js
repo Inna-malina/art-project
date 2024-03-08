@@ -307,9 +307,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 function toMoveAccordion() {
   let accordeons = document.querySelectorAll('.accordion-item');
-  let closes = document.querySelectorAll('.close-according');
  
-
   accordeons.forEach(function (accord) {
     accord.addEventListener('click', function (elem) {
     
@@ -328,6 +326,82 @@ function toMoveAccordion() {
     });
   });
 
+
+}
+
+/***/ }),
+/* 7 */
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   toMoveFooter: function() { return /* binding */ toMoveFooter; }
+/* harmony export */ });
+function toMoveFooter() {
+  // Создаем медиа условие, проверяющее viewports на ширину не менее 768 пикселей.
+
+  let accordeons = document.querySelectorAll('.footer-accordion-item');
+
+  accordeons.forEach(function (accord) {
+    accord.addEventListener('click', function (elem) {
+    
+      let action = elem.target;
+      let currentAccordElem = action.closest('.footer-accordion-item');
+      let currentContent = action.nextElementSibling; 
+      currentAccordElem.classList.toggle("active"); 
+      console.log('sdfgdsfg');
+      if (currentAccordElem.classList.contains("active")) { 
+        currentContent.style.maxHeight = currentContent.scrollHeight + "px";
+      }
+      else {
+        currentContent.style.maxHeight = 0;       
+      }
+    });
+  });
+
+
+}
+
+/***/ }),
+/* 8 */
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   toOpenModal: function() { return /* binding */ toOpenModal; }
+/* harmony export */ });
+function toOpenModal() {
+  // открываем модальное окно
+  let modal = document.querySelector('.modal-window__box');
+  let closeModal = document.querySelector('.modal-close');
+  let btnsOrder = document.querySelectorAll('.button-order');
+  let form = document.querySelector('form');
+  let modalOrder = document.querySelector('.modal-header-order');
+
+  btnsOrder.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      modal.classList.remove('modal-disactive');
+    });
+  });
+
+  // закрываем модальное окно
+  function toCloseModal() {
+    modal.classList.add('modal-disactive');
+    form.reset();
+    form.style.display = "block";
+    modalOrder.classList.add('modal-disactive');
+    modalOrder.classList.remove('active-order');
+  }
+  // закрытие по клику на крестик
+  closeModal.addEventListener('click', toCloseModal);
+
+  // закрытие по клику по прозрачному фону модального окна
+  modal.addEventListener('click', function (evnt) {
+    let action = evnt.target;
+    if (action === modal) {
+      toCloseModal();
+    }
+  });
 
 }
 
@@ -397,6 +471,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _header_menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4);
 /* harmony import */ var _befor_after__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5);
 /* harmony import */ var _question__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6);
+/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7);
+/* harmony import */ var _modal_window__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(8);
+
 
 
 
@@ -411,6 +488,8 @@ __webpack_require__.r(__webpack_exports__);
 (0,_toChangeTab__WEBPACK_IMPORTED_MODULE_0__.toChangeTab)();
 (0,_befor_after__WEBPACK_IMPORTED_MODULE_3__.toBeforAfter)();
 (0,_question__WEBPACK_IMPORTED_MODULE_4__.toMoveAccordion)();
+(0,_footer__WEBPACK_IMPORTED_MODULE_5__.toMoveFooter)();
+(0,_modal_window__WEBPACK_IMPORTED_MODULE_6__.toOpenModal)(); 
 
 }();
 /******/ })()

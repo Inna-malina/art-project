@@ -3,7 +3,8 @@ import { toSliderBunner } from "./toSliderBunner";
 import { headerMenu } from "./header-menu"
 import { toBeforAfter } from "./befor-after";
 import { toMoveAccordion } from "./question";
-
+import { toMoveFooter } from "./footer";
+import { toOpenModal } from "./modal-window";
 
 
 
@@ -12,3 +13,5 @@ toSliderBunner();
 toChangeTab();
 toBeforAfter();
 toMoveAccordion();
+toMoveFooter();
+toOpenModal(); 

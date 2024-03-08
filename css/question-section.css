@@ -1,11 +1,3 @@
-.question-section {}
-
-.center {}
-
-.accordion {}
-
-.question__container {}
-
 .question__container h2 {
   font-size: 45px;
   font-family: var(--Charis);
