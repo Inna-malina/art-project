@@ -18,10 +18,8 @@ export function toChangeTab() {
       let action = event.target;
       disabledNav(navElements)
       action.classList.add('active-nav'); 
-
       let elementNav = infoList[action.dataset.nav];
       let info = Object.values(elementNav);
-      console.log(info[0]);
       tabImgContainer.src = info[0];
       tabImg_1.src = info[1];
       tabImg_2.src = info[3];
